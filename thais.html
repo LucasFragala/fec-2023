@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thaís Pupin - FEC 2023</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/estilos.css">
+    <link rel="stylesheet" href="./src/css/responsivo.css">
+  </head>
+  <body>
+    <header class="cabecalho">
+      <img class="logo" src="./src/imagens/thais/logo.png" alt="Logo">
+    </header>
+
+    <main class="selecao-de-personagens">
+      <section class="personagens">
+        <h1 class="titulo">Selecione uma Arte</h1>
+        <ul class="lista-de-personagens">
+
+            <!-- ARTE 1 -->  
+            <li class="personagem selecionado" id="art1" data-name="art1" data-description="Arte Digital">
+                <img
+                src="./src/imagens/thais/card-art1.jpg"
+                alt="Personagem art1"
+                />
+
+            <!-- ARTE 2 -->  
+            <li class="personagem" id="art2" data-name="art2" data-description="Arte Digital" onclick="mostrarImagemAmpliada()">
+                <img src="./src/imagens/thais/card-art2.jpg" alt="Personagem art2" />
+              </li>
+
+            
+              <div class="imagem-ampliada" id="imagemAmpliada">
+                <span class="fechar" onclick="fecharImagemAmpliada()">&times;</span>
+                <img src="./src/imagens/thais/card-art2.jpg" alt="Personagem art2 Ampliado" />
+              </div>   
+
+              <!-- ARTE 3 -->
+              <li class="personagem" id="art3" data-name="art3" data-description="Arte Digital" onclick="mostrarImagemAmpliada()">
+                <img src="./src/imagens/thais/card-art3.jpg" alt="Personagem art3" />
+              </li>
+
+            
+              <div class="imagem-ampliada" id="imagemAmpliada">
+                <span class="fechar" onclick="fecharImagemAmpliada()">&times;</span>
+                <img src="./src/imagens/thais/card-art3.jpg" alt="Personagem art3 Ampliado" />
+              </div>
+
+              <!-- ARTE 4 -->
+              <li class="personagem" id="art4" data-name="art4" data-description="Arte Digital" onclick="mostrarImagemAmpliada()">
+                <img src="./src/imagens/thais/card-art4.jpg" alt="Personagem art4" />
+              </li>
+
+            
+              <div class="imagem-ampliada" id="imagemAmpliada">
+                <span class="fechar" onclick="fecharImagemAmpliada()">&times;</span>
+                <img src="./src/imagens/thais/card-art4.jpg" alt="Personagem art4 Ampliado" />
+              </div>
+
+              <!-- ARTE 5 -->
+              <li class="personagem" id="art5" data-name="art5" data-description="Arte Digital" onclick="mostrarImagemAmpliada()">
+                <img src="./src/imagens/thais/card-art5.jpg" alt="Personagem art5" />
+              </li>
+
+            
+              <div class="imagem-ampliada" id="imagemAmpliada">
+                <span class="fechar" onclick="fecharImagemAmpliada()">&times;</span>
+                <img src="./src/imagens/thais/card-art5.png" alt="Personagem art5 Ampliado" />
+              </div>
+              
+              
+
+              <!-- ARTE 6 -->
+              <li class="personagem" id="art6" data-name="art6" data-description="Arte Digital" onclick="mostrarImagemAmpliada()">
+                    <img src="./src/imagens/thais/card-art6.jpg" alt="Personagem art6" />
+              </li>
+
+                
+              <div class="imagem-ampliada" id="imagemAmpliada">
+                    <span class="fechar" onclick="fecharImagemAmpliada()">&times;</span>
+                    <img src="./src/imagens/thais/card-art6.png" alt="Personagem art6 Ampliado" />
+              </div>
+
+              <!-- ARTE 7 -->
+              <li class="personagem" id="art7" data-name="art7"          data-description="Arte Digital" onclick="mostrarImagemAmpliada()">
+                <img src="./src/imagens/thais/card-art7.jpg" alt="Personagem art7" />
+                </li>
+
+                    
+                <div class="imagem-ampliada" id="imagemAmpliada">
+                        <span class="fechar" onclick="fecharImagemAmpliada()">&times;</span>
+                        <img src="./src/imagens/thais/card-art7.png" alt="Personagem art7 Ampliado" />
+                </div>
+
+                <!-- ARTE 8 -->
+              <li class="personagem" id="art8" data-name="art8"          data-description="Arte Digital" onclick="mostrarImagemAmpliada()">
+                <img src="./src/imagens/thais/card-art8.jpg" alt="Personagem art8" />
+                </li>
+
+                    
+                <div class="imagem-ampliada" id="imagemAmpliada">
+                        <span class="fechar" onclick="fecharImagemAmpliada()">&times;</span>
+                        <img src="./src/imagens/thais/card-art8.png" alt="Personagem art8 Ampliado" />
+                </div>
+
+                
+        </ul>
+      </section>
+      <section class="personagem-selecionado">
+        <img
+          class="personagem-grande"
+          src="./src/imagens/thais/card-art1.png"
+          alt="Personagem Selecionado"
+        />
+
+        <div class="informacoes-personagem">
+          <h2 class="nome-personagem" id="nome-personagem">art1</h2>
+          <p class="descricao-personagem" id="descricao-personagem">
+            Arte Digital
+          </p> 
+        </div>
+        <br>
+        <div><a href="javascript:history.back()" class="botao-voltar">Voltar</a></div> 
+      </section>
+    </main>
+    <script src="./src/js/thais.js"></script>
+  </body>
+</html>

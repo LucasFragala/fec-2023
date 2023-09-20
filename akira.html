@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vinícius Akira Matsuda - FEC 2023</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/estilos.css">
+    <link rel="stylesheet" href="./src/css/responsivo.css">
+  </head>
+  <body>
+    <header class="cabecalho">
+      <img class="logo" src="./src/imagens/akira/logo.png" alt="Logo">
+    </header>
+
+    <main class="selecao-de-personagens">
+      <section class="personagens">
+        <h1 class="titulo">Selecione uma Arte</h1>
+        <ul class="lista-de-personagens">
+
+            <!-- ARTE 1 -->  
+            <li class="personagem selecionado" id="fec" data-name="Fec" data-description="Manipulação de imagem feita em Photoshop">
+                <img
+                src="./src/imagens/akira/card-fec.jpg"
+                alt="Personagem fec"
+                />
+
+            <!-- ARTE 2 -->  
+            <li class="personagem" id="drogaven" data-name="Drogaven" data-description="Manipulação de imagem feita em Photoshop" onclick="mostrarImagemAmpliada()">
+                <img src="./src/imagens/akira/card-drogaven.jpg" alt="Personagem Drogaven" />
+              </li>
+
+            
+              <div class="imagem-ampliada" id="imagemAmpliada">
+                <span class="fechar" onclick="fecharImagemAmpliada()">&times;</span>
+                <img src="./src/imagens/akira/card-drogaven.jpg" alt="Personagem Drogaven Ampliado" />
+              </div>   
+
+              <!-- ARTE 3 -->
+              <li class="personagem" id="british" data-name="British" data-description="Manipulação de imagem feita em Photoshop" onclick="mostrarImagemAmpliada()">
+                <img src="./src/imagens/akira/card-british.jpg" alt="Personagem british" />
+              </li>
+
+            
+              <div class="imagem-ampliada" id="imagemAmpliada">
+                <span class="fechar" onclick="fecharImagemAmpliada()">&times;</span>
+                <img src="./src/imagens/akira/card-british.jpg" alt="Personagem British Ampliado" />
+              </div>
+
+              <!-- ARTE 4 -->
+              <li class="personagem" id="copa" data-name="Copa do Mundo 2022" data-description="Manipulação de imagem feita em Photoshop" onclick="mostrarImagemAmpliada()">
+                <img src="./src/imagens/akira/card-copa.jpg" alt="Personagem Copa" />
+              </li>
+
+            
+              <div class="imagem-ampliada" id="imagemAmpliada">
+                <span class="fechar" onclick="fecharImagemAmpliada()">&times;</span>
+                <img src="./src/imagens/akira/card-copa.jpg" alt="Personagem Copa Ampliado" />
+              </div>
+
+              <!-- ARTE 5 -->
+              <li class="personagem" id="tarrasque" data-name="Jogo da Memória-Tarrasque" data-description="Manipulação de imagem feita em Photoshop" onclick="mostrarImagemAmpliada()">
+                <img src="./src/imagens/akira/card-tarrasque.jpg" alt="Personagem tarrasque" />
+              </li>
+
+            
+              <div class="imagem-ampliada" id="imagemAmpliada">
+                <span class="fechar" onclick="fecharImagemAmpliada()">&times;</span>
+                <img src="./src/imagens/akira/card-tarrasque.png" alt="Personagem tarrasque Ampliado" />
+              </div>
+              
+              
+
+              
+                    
+                <div class="imagem-ampliada" id="imagemAmpliada">
+                        <span class="fechar" onclick="fecharImagemAmpliada()">&times;</span>
+                        <img src="./src/imagens/akira/card-fec.png" alt="Personagem uniara card-fec" />
+                </div>
+
+                
+        </ul>
+      </section>
+      <section class="personagem-selecionado">
+        <img
+          class="personagem-grande"
+          src="./src/imagens/akira/card-fec.png"
+          alt="Personagem Selecionado"
+        />
+
+        <div class="informacoes-personagem">
+          <h2 class="nome-personagem" id="nome-personagem">FEC 2023</h2>
+          <p class="descricao-personagem" id="descricao-personagem">
+            Manipulação de imagem feita em Photoshop
+          </p> 
+        </div>
+        <br>
+        <div><a href="javascript:history.back()" class="botao-voltar">Voltar</a></div> 
+      </section>
+    </main>
+    <script src="./src/js/akira.js"></script>
+  </body>
+</html>

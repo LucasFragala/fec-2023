@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lucas Fragalá - FEC 2023</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/estilos.css">
+    <link rel="stylesheet" href="./src/css/responsivo.css">
+  </head>
+  <body>
+    <header class="cabecalho">
+      <img class="logo" src="./src/imagens/fraga/logo.png" alt="Logo">
+    </header>
+
+    <main class="selecao-de-personagens">
+      <section class="personagens">
+        <h1 class="titulo">Selecione uma Arte</h1>
+        <ul class="lista-de-personagens">
+
+            <!-- ARTE 1 -->  
+            <li class="personagem selecionado" id="desert" data-name="Desert" data-description="Manipulação de imagem feita em Photoshop">
+                <img
+                src="./src/imagens/fraga/card-desert.jpg"
+                alt="Personagem Desert"
+                />
+
+            <!-- ARTE 2 -->  
+            <li class="personagem" id="punisher" data-name="Punisher" data-description="Manipulação de imagem feita em Photoshop" onclick="mostrarImagemAmpliada()">
+                <img src="./src/imagens/fraga/card-punisher.jpg" alt="Personagem Punisher" />
+              </li>
+
+            
+              <div class="imagem-ampliada" id="imagemAmpliada">
+                <span class="fechar" onclick="fecharImagemAmpliada()">&times;</span>
+                <img src="./src/imagens/fraga/card-punisher.jpg" alt="Personagem Punisher Ampliado" />
+              </div>   
+
+              <!-- ARTE 3 -->
+              <li class="personagem" id="wakandaforever" data-name="Wakanda Forever" data-description="Manipulação de imagem feita em Photoshop" onclick="mostrarImagemAmpliada()">
+                <img src="./src/imagens/fraga/card-wakandaforever.jpg" alt="Personagem wakandaforever" />
+              </li>
+
+            
+              <div class="imagem-ampliada" id="imagemAmpliada">
+                <span class="fechar" onclick="fecharImagemAmpliada()">&times;</span>
+                <img src="./src/imagens/fraga/card-wakandaforever.jpg" alt="Personagem Punisher Ampliado" />
+              </div>
+
+              <!-- ARTE 4 -->
+              <li class="personagem" id="blackwidow" data-name="Black Widow" data-description="Manipulação de imagem feita em Photoshop" onclick="mostrarImagemAmpliada()">
+                <img src="./src/imagens/fraga/card-blackwidow.jpg" alt="Personagem blackwidow" />
+              </li>
+
+            
+              <div class="imagem-ampliada" id="imagemAmpliada">
+                <span class="fechar" onclick="fecharImagemAmpliada()">&times;</span>
+                <img src="./src/imagens/fraga/card-blackwidow.jpg" alt="Personagem Punisher Ampliado" />
+              </div>
+
+              <!-- ARTE 5 -->
+              <li class="personagem" id="phpmascot" data-name="PHP Mascot" data-description="Manipulação de imagem feita em Photoshop" onclick="mostrarImagemAmpliada()">
+                <img src="./src/imagens/fraga/card-phpmascot.jpg" alt="Personagem phpmascot" />
+              </li>
+
+            
+              <div class="imagem-ampliada" id="imagemAmpliada">
+                <span class="fechar" onclick="fecharImagemAmpliada()">&times;</span>
+                <img src="./src/imagens/fraga/card-phpmascot.png" alt="Personagem phpmascot Ampliado" />
+              </div>
+              
+              
+
+              <!-- ARTE 6 -->
+              <li class="personagem" id="book" data-name="O Jeito Difícil de me Amar"          data-description="Ilustração digital e finalizado no Photoshop" onclick="mostrarImagemAmpliada()">
+                    <img src="./src/imagens/fraga/card-book.jpg" alt="Personagem book" />
+              </li>
+
+                
+              <div class="imagem-ampliada" id="imagemAmpliada">
+                    <span class="fechar" onclick="fecharImagemAmpliada()">&times;</span>
+                    <img src="./src/imagens/fraga/card-book.png" alt="Personagem book Ampliado" />
+              </div>
+
+              <!-- ARTE 7 -->
+              <li class="personagem" id="saw" data-name="Do you wanna play a game?"          data-description="Cosplay manipulado e finalizado com Photoshop" onclick="mostrarImagemAmpliada()">
+                <img src="./src/imagens/fraga/card-saw.jpg" alt="Personagem saw" />
+                </li>
+
+                    
+                <div class="imagem-ampliada" id="imagemAmpliada">
+                        <span class="fechar" onclick="fecharImagemAmpliada()">&times;</span>
+                        <img src="./src/imagens/fraga/card-saw.png" alt="Personagem saw Ampliado" />
+                </div>
+
+                <!-- ARTE 7 -->
+              <li class="personagem" id="uniara" data-name="mockup mug"          data-description="Mockup de caneca feito no Photoshop" onclick="mostrarImagemAmpliada()">
+                <img src="./src/imagens/fraga/card-uniara.jpg" alt="Personagem uniara" />
+                </li>
+
+                    
+                <div class="imagem-ampliada" id="imagemAmpliada">
+                        <span class="fechar" onclick="fecharImagemAmpliada()">&times;</span>
+                        <img src="./src/imagens/fraga/card-uniara.png" alt="Personagem uniara Ampliado" />
+                </div>
+
+                
+        </ul>
+      </section>
+      <section class="personagem-selecionado">
+        <img
+          class="personagem-grande"
+          src="./src/imagens/fraga/card-desert.png"
+          alt="Personagem Selecionado"
+        />
+
+        <div class="informacoes-personagem">
+          <h2 class="nome-personagem" id="nome-personagem">Desert</h2>
+          <p class="descricao-personagem" id="descricao-personagem">
+            Manipulação de imagem feita em Photoshop
+          </p> 
+        </div>
+        <br>
+        <div><a href="javascript:history.back()" class="botao-voltar">Voltar</a></div> 
+      </section>
+    </main>
+    <script src="./src/js/fraga.js"></script>
+  </body>
+</html>

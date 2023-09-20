@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rodrigo C. Araujo Silva - FEC 2023</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/estilos.css">
+    <link rel="stylesheet" href="./src/css/responsivo.css">
+  </head>
+  <body>
+    <header class="cabecalho">
+      <img class="logo" src="./src/imagens/rodrigo/logo.png" alt="Logo">
+    </header>
+
+    <main class="selecao-de-personagens">
+      <section class="personagens">
+        <h1 class="titulo">Selecione uma Arte</h1>
+        <ul class="lista-de-personagens">
+
+            <!-- ARTE 1 -->  
+            <li class="personagem selecionado" id="formas" data-name="Criação de Formas 3D" data-description="Criação de Formas em Blender">
+                <img
+                src="./src/imagens/rodrigo/card-formas.jpg"
+                alt="Personagem formas"
+                />
+
+            <!-- ARTE 2 -->  
+            <li class="personagem" id="formas2" data-name="Criação de Formas 3D" data-description="Criação de Formas em Blender" onclick="mostrarImagemAmpliada()">
+                <img src="./src/imagens/rodrigo/card-formas2.jpg" alt="Personagem formas2" />
+              </li>
+
+            
+              <div class="imagem-ampliada" id="imagemAmpliada">
+                <span class="fechar" onclick="fecharImagemAmpliada()">&times;</span>
+                <img src="./src/imagens/rodrigo/card-formas2.jpg" alt="Personagem formas2 Ampliado" />
+              </div>   
+
+              <!-- ARTE 3 -->
+              <li class="personagem" id="car" data-name="Carro 3D" data-description="Carro em 3D" onclick="mostrarImagemAmpliada()">
+                <img src="./src/imagens/rodrigo/card-car.jpg" alt="Personagem car" />
+              </li>
+
+            
+              <div class="imagem-ampliada" id="imagemAmpliada">
+                <span class="fechar" onclick="fecharImagemAmpliada()">&times;</span>
+                <img src="./src/imagens/rodrigo/card-car.jpg" alt="Personagem car Ampliado" />
+              </div>
+
+              <!-- ARTE 4 -->
+              <li class="personagem" id="skull" data-name="Skull" data-description="Arte Conceito em 3D" onclick="mostrarImagemAmpliada()">
+                <img src="./src/imagens/rodrigo/card-skull.jpg" alt="Personagem skull" />
+              </li>
+
+            
+              <div class="imagem-ampliada" id="imagemAmpliada">
+                <span class="fechar" onclick="fecharImagemAmpliada()">&times;</span>
+                <img src="./src/imagens/rodrigo/card-skull.jpg" alt="Personagem skull Ampliado" />
+              </div>
+
+              <!-- ARTE 5 -->
+              <li class="personagem" id="house" data-name="House" data-description="Arte Conceito em 3D" onclick="mostrarImagemAmpliada()">
+                <img src="./src/imagens/rodrigo/card-house.jpg" alt="Personagem house" />
+              </li>
+
+            
+              <div class="imagem-ampliada" id="imagemAmpliada">
+                <span class="fechar" onclick="fecharImagemAmpliada()">&times;</span>
+                <img src="./src/imagens/rodrigo/card-house.png" alt="Personagem house Ampliado" />
+              </div>
+              
+              
+
+              <!-- ARTE 6 -->
+              <li class="personagem" id="house2" data-name="House 2"          data-description="Arte Conceito em 3D" onclick="mostrarImagemAmpliada()">
+                    <img src="./src/imagens/rodrigo/card-house2.jpg" alt="Personagem house2" />
+              </li>
+
+                
+              <div class="imagem-ampliada" id="imagemAmpliada">
+                    <span class="fechar" onclick="fecharImagemAmpliada()">&times;</span>
+                    <img src="./src/imagens/rodrigo/card-house2.png" alt="Personagem house2 Ampliado" />
+              </div>
+
+              
+                
+        </ul>
+      </section>
+      <section class="personagem-selecionado">
+        <img
+          class="personagem-grande"
+          src="./src/imagens/rodrigo/card-formas.png"
+          alt="Personagem Selecionado"
+        />
+
+        <div class="informacoes-personagem">
+          <h2 class="nome-personagem" id="nome-personagem">Criação de Formas 3D</h2>
+          <p class="descricao-personagem" id="descricao-personagem">
+            Criação de Formas em Blender
+          </p> 
+        </div>
+        <br>
+        <div><a href="javascript:history.back()" class="botao-voltar">Voltar</a></div> 
+      </section>
+    </main>
+    <script src="./src/js/rodrigo.js"></script>
+  </body>
+</html>

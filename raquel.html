@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Raquel Dias Simioni - FEC 2023</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/estilos.css">
+    <link rel="stylesheet" href="./src/css/responsivo.css">
+  </head>
+  <body>
+    <header class="cabecalho">
+      <img class="logo" src="./src/imagens/raquel/logo.png" alt="Logo">
+    </header>
+
+    <main class="selecao-de-personagens">
+      <section class="personagens">
+        <h1 class="titulo">Selecione uma Arte</h1>
+        <ul class="lista-de-personagens">
+
+            <!-- ARTE 1 -->  
+            <li class="personagem selecionado" id="lgbt" data-name="Mês do orgulho LGBT+" data-description="Manipulação de imagem feita em Photoshop">
+                <img
+                src="./src/imagens/raquel/card-lgbt.jpg"
+                alt="Personagem lgbt"
+                />
+
+            <!-- ARTE 2 -->  
+            <li class="personagem" id="foar" data-name="Logo EEU FOAr" data-description="Manipulação de imagem feita em Photoshop" onclick="mostrarImagemAmpliada()">
+                <img src="./src/imagens/raquel/card-foar.jpg" alt="Personagem foar" />
+              </li>
+
+            
+              <div class="imagem-ampliada" id="imagemAmpliada">
+                <span class="fechar" onclick="fecharImagemAmpliada()">&times;</span>
+                <img src="./src/imagens/raquel/card-foar.jpg" alt="Personagem foar Ampliado" />
+              </div>   
+
+              <!-- ARTE 3 -->
+              <li class="personagem" id="terrafarma" data-name="Rótulo Terra Farma" data-description="Criação de rótulo feita em Illustrator" onclick="mostrarImagemAmpliada()">
+                <img src="./src/imagens/raquel/card-terrafarma.jpg" alt="Personagem terrafarma" />
+              </li>
+
+            
+              <div class="imagem-ampliada" id="imagemAmpliada">
+                <span class="fechar" onclick="fecharImagemAmpliada()">&times;</span>
+                <img src="./src/imagens/raquel/card-terrafarma.jpg" alt="Personagem terrafarma Ampliado" />
+              </div>
+
+              <!-- ARTE 4 -->
+              <li class="personagem" id="animoflex" data-name="Rótulo Amino Flex" data-description="Criação de rótulo feita em Illustrator" onclick="mostrarImagemAmpliada()">
+                <img src="./src/imagens/raquel/card-animoflex.jpg" alt="Personagem animoflex" />
+              </li>
+
+            
+              <div class="imagem-ampliada" id="imagemAmpliada">
+                <span class="fechar" onclick="fecharImagemAmpliada()">&times;</span>
+                <img src="./src/imagens/raquel/card-animoflex.jpg" alt="Personagem animoflex Ampliado" />
+              </div>
+
+              <!-- ARTE 5 -->
+              <li class="personagem" id="biomax" data-name="Logo Bio Max" data-description="Criação de logo em Illustrator" onclick="mostrarImagemAmpliada()">
+                <img src="./src/imagens/raquel/card-biomax.jpg" alt="Personagem biomax" />
+              </li>
+
+            
+              <div class="imagem-ampliada" id="imagemAmpliada">
+                <span class="fechar" onclick="fecharImagemAmpliada()">&times;</span>
+                <img src="./src/imagens/raquel/card-biomax.png" alt="Personagem biomax Ampliado" />
+              </div>
+              
+              
+
+              <!-- ARTE 6 -->
+              <li class="personagem" id="complet" data-name="Rótulo Top Complet Gold"          data-description="Criação de rótulo feita em Illustrator" onclick="mostrarImagemAmpliada()">
+                    <img src="./src/imagens/raquel/card-complet.jpg" alt="Personagem complet" />
+              </li>
+
+                
+              <div class="imagem-ampliada" id="imagemAmpliada">
+                    <span class="fechar" onclick="fecharImagemAmpliada()">&times;</span>
+                    <img src="./src/imagens/raquel/card-complet.png" alt="Personagem complet Ampliado" />
+              </div>
+
+              <!-- ARTE 7 -->
+              <li class="personagem" id="completblack" data-name="Rótulo: Top Complet Gold"          data-description="Criação de rótulo feita em Illustrator" onclick="mostrarImagemAmpliada()">
+                <img src="./src/imagens/raquel/card-completblack.jpg" alt="Personagem completblack" />
+                </li>
+
+                    
+                <div class="imagem-ampliada" id="imagemAmpliada">
+                        <span class="fechar" onclick="fecharImagemAmpliada()">&times;</span>
+                        <img src="./src/imagens/raquel/card-completblack.png" alt="Personagem completblack Ampliado" />
+                </div>
+
+                <!-- ARTE 7 -->
+              <li class="personagem" id="agrosuper" data-name="Rótulo: Agro Super"          data-description="Mockup de caneca feito no Photoshop" onclick="mostrarImagemAmpliada()">
+                <img src="./src/imagens/raquel/card-agrosuper.jpg" alt="Personagem agrosuper" />
+                </li>
+
+                    
+                <div class="imagem-ampliada" id="imagemAmpliada">
+                        <span class="fechar" onclick="fecharImagemAmpliada()">&times;</span>
+                        <img src="./src/imagens/raquel/card-agrosuper.png" alt="Personagem agrosuper Ampliado" />
+                </div>
+
+                
+        </ul>
+      </section>
+      <section class="personagem-selecionado">
+        <img
+          class="personagem-grande"
+          src="./src/imagens/raquel/card-lgbt.png"
+          alt="Personagem Selecionado"
+        />
+
+        <div class="informacoes-personagem">
+          <h2 class="nome-personagem" id="nome-personagem">Mês do orgulho LGBT+</h2>
+          <p class="descricao-personagem" id="descricao-personagem">
+            Manipulação de imagem feita em Photoshop
+          </p> 
+        </div>
+        <br>
+        <div><a href="javascript:history.back()" class="botao-voltar">Voltar</a></div> 
+      </section>
+    </main>
+    <script src="./src/js/raquel.js"></script>
+  </body>
+</html>
